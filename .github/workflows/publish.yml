@@ -122,6 +122,6 @@ jobs:
   Create-GitHub-Release:
     needs: [ Publish-Maven-Artefacts, Determine-Version ]
     if: ${{ !endsWith(needs.Determine-Version.outputs.VERSION, '-SNAPSHOT') }}
-    uses: ./.github/workflows/release-cvf.yml
+    uses: ./.github/workflows/release-tck-common.yml
     with:
       cvf_version: ${{ needs.Determine-Version.outputs.VERSION }}

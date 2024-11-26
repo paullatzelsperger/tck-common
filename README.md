@@ -1,3 +1,3 @@
 # Technology Compatibility Kit Commons
 
-...crickets...
+Shared code that is used by the Technology Compatibility Kits and the build plugins alike.
